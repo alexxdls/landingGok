@@ -17,9 +17,11 @@ export default function NewsScroller() {
     const refWidthScrollerNews = useRef(null)
     const router = useRouter()
 
+    const fetchNewsLimit4 = process.env.NEXT_PUBLIC_FETCH_NEWS_LIMIT4 || `http://192.168.200.93:3888/api/v1/news?offset=0&limit=4`
+
     useEffect(() => {
         const getData = async () => {
-            const res = await fetch('http://192.168.195.224:8081/api/v1/news?offset=0&limit=4')
+            const res = await fetch(fetchNewsLimit4)
             if (!res.ok) {
                 throw new Error('Fail')
             }

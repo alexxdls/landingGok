@@ -8,9 +8,11 @@ export default function NewsPage() {
     const [widthItemNews, setWidthItemNews] = useState()
     const [dataNews, setDataNews] = useState([])
 
+    const fetchNewsLimit = process.env.NEXT_PUBLIC_FETCH_NEWS_LIMIT || 'http://192.168.200.93:3888/api/v1/news?offset=0&limit=20'
+
     useEffect(() => {
         const getData = async () => {
-            const res = await fetch('http://192.168.195.224:8081/api/v1/news?offset=0&limit=20')
+            const res = await fetch(fetchNewsLimit)
             if (!res.ok) {
                 throw new Error('Fail')
             }

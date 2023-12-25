@@ -8,10 +8,13 @@ import Link from "next/link";
 
 
 export default function News({params} = props) {
+
+    const fetchNewsCurrent = process.env.NEXT_PUBLIC_FETCH_NEWS_CURRENT || `http://192.168.200.93:3888/api/v1/news/ads`
+
     
     const fetcher = (...args) => fetch(...args).then(res =>  res.json())
 
-    const { data, error, isLoading } = useSWR(`http://192.168.195.224:8081/api/v1/news/${params.url}`, fetcher) 
+    const { data, error, isLoading } = useSWR(`${fetchNewsCurrent}${params.url}`, fetcher) 
     
     const getDateToTimastamp = (dateCreated) => {
         const date = new Date(Number(dateCreated))
