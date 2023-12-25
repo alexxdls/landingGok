@@ -1,0 +1,22 @@
+{
+  "name": "bor-site",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -- -p 80",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.5",
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^2.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4"
+  }
+}

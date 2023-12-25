@@ -1,0 +1,119 @@
+.container {
+    margin: auto;
+    max-width: 1440px;
+    padding: 150px 8px 150px 8px;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.controls {
+    display: flex
+}
+
+.itemController {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemController__title {
+    color: #313131;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.itemControllPrev {
+    width: 43px;
+    height: 43px;
+    /* background: url('/icons/prevArrow.svg') no-repeat center; */
+    cursor: pointer;
+    margin-right: 10px;
+}
+.itemControllNext {
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.itemScroller {
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.itemScroller::-webkit-scrollbar {
+    width: 0px;
+}
+
+.leftLinerGradient {
+    background: linear-gradient(90deg, #FFF 0.01%, rgba(255, 255, 255, 0.23) 72.36%, rgba(255, 255, 255, 0.00) 99.99%);
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+}
+
+.rightLinerGradient {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0.01%, rgba(255, 255, 255, 0.23) 40.11%, #FFF 99.99%);
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+}
+
+.scroller{
+    scrollbar-width: thin;
+    display: flex;
+    transition: 500ms;
+}
+
+.itemAllNews {
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.itemAllNews:hover {
+    transform: scale(0.95);
+    transition: 400ms;
+}
+
+.allNewsItemArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5EBDB5;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.itemAllNews__about {
+    margin-top: 10px;
+}
+
+@media (max-width: 820px) {
+    .itemController__title {
+        font-size: calc(20px + 32 * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .controls {
+        display: none;
+    }
+}  
