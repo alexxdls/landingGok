@@ -34,8 +34,8 @@ export default function Work() {
                         'zIndex': '1', 
                         'borderRadius': '20px',
                         }}
-                        src="/images/photo1701912474.jpeg" 
-                        alt="На фото сотрудники ИТ отдела и отдела кадров" 
+                        src="/images/ИТ-отдел-отдел-кадров.jpg" 
+                        alt="На фото сотрудники ИТ (Пронин Влад, Кунцевич Артур, Руцкий Константин) отдела и отдела кадров" 
                         // width={100}
                         // height={100}
                         fill={true}
