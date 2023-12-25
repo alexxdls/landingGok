@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function News({params} = props) {
 
-    const fetchNewsCurrent = process.env.NEXT_PUBLIC_FETCH_NEWS_CURRENT || `http://192.168.200.93:3888/api/v1/news/ads`
+    const fetchNewsCurrent = process.env.NEXT_PUBLIC_FETCH_NEWS_CURRENT || `http://192.168.200.93:3888/api/v1/news/`
 
     
     const fetcher = (...args) => fetch(...args).then(res =>  res.json())
