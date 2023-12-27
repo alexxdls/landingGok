@@ -13,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
+      <meta name="yandex-verification" content="74443c44e620a16f" />
       <body className={inter.className}>
         <Header />
         {children}
