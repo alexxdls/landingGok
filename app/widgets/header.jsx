@@ -42,8 +42,8 @@ export default function Header() {
                 </Link>
                 <nav className="header-nav">
                     <Link href="/#about" className="header-nav__name">О преприятии</Link>
-                    <Link href="/#vacancy" className="header-nav__name">Вакансии</Link>
                     <Link href="/#news" className="header-nav__name">Новости</Link>
+                    <Link href="/#vacancy" className="header-nav__name">Вакансии</Link>
                     <Link href="/#contacts" className="header-nav__name">Контакты</Link>
                 </nav>
                 

@@ -13,10 +13,10 @@ export default function Home() {
         <FirstSplash /> 
         <AboutCompany />
         <WhatProduce />
+        <NewsScroller />
         <Work />
         <Vacancy />
         <Contacts />
-        <NewsScroller />
       </main>
   )
 }
