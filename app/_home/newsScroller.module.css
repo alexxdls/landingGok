@@ -20,10 +20,21 @@
     align-items: center;
 }
 
-.itemController__title {
+.titleSectionWrapper {
+    display: flex;
+    align-items: center;
     color: #313131;
+    transition: .4s;
+}
+
+.titleSectionWrapper:hover {
+    color: #065D61;
+}
+
+.itemController__title {
     font-size: 32px;
     font-weight: 700;
+    margin-right: 8px;
 }
 
 .itemControllPrev {

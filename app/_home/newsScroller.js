@@ -2,8 +2,9 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import NewsItem from '../widgets/newsItem'
 import styles from './newsScroller.module.css'
-import { allNewsArrow, nextArrow, prevArrow } from '@/public/icons/icons'
+import { allNewsArrow, linkOut, nextArrow, prevArrow } from '@/public/icons/icons'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
  
 
 export default function NewsScroller() {
@@ -87,7 +88,10 @@ export default function NewsScroller() {
         <div className={styles.container} id='news'>
             <div className={styles.wrapper}>
                 <div className={styles.itemController}>
-                    <h2 className={styles.itemController__title}>Новости</h2>
+                    <Link className={styles.titleSectionWrapper} href={'/news'}>
+                        <h2 className={styles.itemController__title}>Новости</h2>
+                        {linkOut()}
+                    </Link>
                     <div className={styles.controls}>
                         <div className={styles.itemControllPrev}
                         onClick={() => handlePrev(indexCurrentNews - 1)}>
