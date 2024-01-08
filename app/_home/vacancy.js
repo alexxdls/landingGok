@@ -29,7 +29,7 @@ export default function Vacancy() {
     }
 
     if (error) {
-        return <p>Ошибка на сайте Работа в России...</p>
+        return <div></div>
     }
 
     
