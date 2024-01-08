@@ -15,7 +15,7 @@ export default function Vacancy() {
 
     const fetcher = (...args) => fetch(...args).then(res =>  res.json())
 
-    const { data, error, isLoading } = useSWR(isLimitVacancy ? `http://opendata.trudvsem.ru/api/v1/vacancies/company/5137746121981?offset=1&limit=6` : `http://opendata.trudvsem.ru/api/v1/vacancies/company/5137746121981`, fetcher)
+    const { data, error, isLoading } = useSWR(isLimitVacancy ? `https://opendata.trudvsem.ru/api/v1/vacancies/company/5137746121981?offset=1&limit=6` : `https://opendata.trudvsem.ru/api/v1/vacancies/company/5137746121981`, fetcher)
     
     if (isLoading) {
         return (
