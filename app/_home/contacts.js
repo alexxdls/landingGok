@@ -14,7 +14,7 @@ export default function Contacts() {
                         <div className={styles.contentAbout}>
                             <p className={styles.contentAbout__title}>Отдел кадров</p>
                             <p className={styles.contentAbout__about}>Телефон</p>
-                            <a href='tel:+7(423)732-92-08' className={styles.contentAbout__contact}>+7(423)732-92-08</a>
+                            <a href='tel:+7(423)733-43-24' className={styles.contentAbout__contact}>+7(423)733-43-24</a>
                             <p className={styles.contentAbout__about}>E-mail</p>
                             <a href='mailto:kadrbor@mail.ru' className={styles.contentAbout__contact}>kadrbor@mail.ru</a>
                             <p className={styles.contentAbout__about}>Режим работы</p>
