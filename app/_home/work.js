@@ -10,21 +10,30 @@ export default function Work() {
                 <div className={styles.container}>
                     <div className={styles.contentContainer}>
                         <p className={styles.about}>
-                            Дальнегоский ГОК активно развивается и заинтересована в расширении штата сотрудников по различным специальностям. В компании реализуется комплекс корпоративных программ, направленных на повышение уровня социальной защищенности сотрудников, создание безопасных условий труда, профессиональное развитие и карьерный рост.
+                            ООО «Дальнегорский ГОК» активно развивается и заинтересован в расширении штата сотрудников по различным специальностям. Мы готовы предложить соискателям расширенный комплекс социальных программ и гарантий, направленных на повышение уровня жизни сотрудников, карьерных и профессиональных возможностей, формирование безопасных и комфортных условий труда.
                         </p>
-                        <p className={styles.proposal}>Мы предлагаем нашим сотрудникам:</p>
+                        <p className={styles.proposal}>Преимущества работы в нашем горно-обогатительном комбинате:</p>
                         <div className={styles.proposalItems}>
                             <div className={styles.proposalItem}>
-                                <p className={styles.proposalItem__name}>Конкурентную заработную плату</p>
+                                <p className={styles.proposalItem__name}>Интересная работа на уникальном предприятии.</p>
                             </div>
                             <div className={styles.proposalItem}>
-                                <p className={styles.proposalItem__name}>Безопасные условия труда</p>
+                                <p className={styles.proposalItem__name}>Возможности карьерного роста внутри компании.</p>
                             </div>
                             <div className={styles.proposalItem}>
-                                <p className={styles.proposalItem__name}>Расширенную программу социальных гарантий</p>
+                                <p className={styles.proposalItem__name}>Получение новой специальности на базе учебного комбината предприятия.</p>
                             </div>
                             <div className={styles.proposalItem}>
-                                <p className={styles.proposalItem__name}>Возможности карьерного роста внутри предприятия</p>
+                                <p className={styles.proposalItem__name}>Достойная заработная плата и возможность повлиять на свой доход.</p>
+                            </div>
+                            <div className={styles.proposalItem}>
+                                <p className={styles.proposalItem__name}>Расширенный социальный пакет льгот и гарантий.</p>
+                            </div>
+                            <div className={styles.proposalItem}>
+                                <p className={styles.proposalItem__name}>Дружный коллектив.</p>
+                            </div>
+                            <div className={styles.proposalItem}>
+                                <p className={styles.proposalItem__name}>Насыщенная внутрикорпоративная жизнь.</p>
                             </div>
                         </div>
                     </div>

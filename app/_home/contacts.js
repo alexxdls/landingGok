@@ -21,7 +21,7 @@ export default function Contacts() {
                                 <p className={styles.contentAbout__about}>E-mail</p>
                                 <a href='mailto:kadrbor@mail.ru' className={styles.contentAbout__contact}>kadrbor@mail.ru</a>
                                 <p className={styles.contentAbout__about}>Режим работы</p>
-                                <p className={styles.contentAbout__contact}>ПН - ПТ с 9:00 до 15:00</p>
+                                <p className={styles.contentAbout__contact}>ПН - ПТ с 8:00 до 17:00</p>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,15 @@ export default function Contacts() {
                                 <p className={styles.contentAbout__about}>Телефон</p>
                                 <a href='tel:+7(423)733-62-22' className={styles.contentAbout__contact}>+7(423)733-62-22</a>
                                 <p className={styles.contentAbout__about}>E-mail - канцелярия</p>
-                                <a href='mailto:kadrbor@mail.ru' className={styles.contentAbout__contact}>mail@b-acid.ru</a>
+                                <a href='mailto:mail@b-acid.ru' className={styles.contentAbout__contact}>mail@b-acid.ru</a>
+                            </div>
+                   
+                            <p className={styles.contentAbout__title}>Пресс-служба</p>
+                            <div className={styles.contentAboutItem}>
+                                <p className={styles.contentAbout__about}>Телефон</p>
+                                <a href='tel:+7(964)439-08-88' className={styles.contentAbout__contact}>+7(964)439-08-88</a>
+                                <p className={styles.contentAbout__about}>E-mail - канцелярия</p>
+                                <a href='mailto:kratanchuk@gmail.com' className={styles.contentAbout__contact}>kratanchuk@gmail.com</a>
                             </div>
                         </div>
                     </div>
