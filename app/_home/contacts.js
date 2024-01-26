@@ -39,7 +39,7 @@ export default function Contacts() {
                             <div className={styles.contentAboutItem}>
                                 <p className={styles.contentAbout__about}>Телефон</p>
                                 <a href='tel:+7(964)439-08-88' className={styles.contentAbout__contact}>+7(964)439-08-88</a>
-                                <p className={styles.contentAbout__about}>E-mail - канцелярия</p>
+                                <p className={styles.contentAbout__about}>E-mail</p>
                                 <a href='mailto:kratanchuk@gmail.com' className={styles.contentAbout__contact}>kratanchuk@gmail.com</a>
                             </div>
                         </div>

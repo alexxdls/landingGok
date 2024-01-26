@@ -52,7 +52,7 @@ export default function FirstSplash() {
                 <div className={styles.smollInfo}>
                     <div className={styles.itemSmollInfo}>
                         <p className={styles.itemSmollInfo__info}>Работаем с</p>
-                        <p className={styles.itemSmollInfo__placeholder}>1958 года</p>
+                        <p className={styles.itemSmollInfo__placeholder}>1959 года</p>
                     </div>
                     <div className={styles.itemSmollInfoTwo}>
                         <p className={styles.itemSmollInfo__info}>Занимаем</p>
