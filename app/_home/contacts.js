@@ -16,6 +16,7 @@ export default function Contacts() {
                             <div className={styles.contentAboutItem}>
                                 <p className={styles.contentAbout__about}>Телефон</p>
                                 <a href='tel:+7(423)733-44-95' className={styles.contentAbout__contact}>+7(423)733-44-95</a>
+                                <a href='tel:+7(924)323-01-36' className={styles.contentAbout__contact}>+7(924)323-01-36</a>
                                 <p className={styles.contentAbout__about}>Начальник отдела кадров</p>
                                 <a href='tel:+7(423)733-43-24' className={styles.contentAbout__contact}>+7(423)733-43-24</a>
                                 <p className={styles.contentAbout__about}>E-mail</p>
@@ -32,13 +33,11 @@ export default function Contacts() {
                                 <p className={styles.contentAbout__about}>Телефон</p>
                                 <a href='tel:+7(423)733-62-22' className={styles.contentAbout__contact}>+7(423)733-62-22</a>
                                 <p className={styles.contentAbout__about}>E-mail - канцелярия</p>
-                                <a href='mailto:mail@b-acid.ru' className={styles.contentAbout__contact}>mail@b-acid.ru</a>
+                                <a href='mailto:mail@bor-acid.ru' className={styles.contentAbout__contact}>mail@b-acid.ru</a>
                             </div>
                    
                             <p className={styles.contentAbout__title}>Пресс-служба</p>
                             <div className={styles.contentAboutItem}>
-                                <p className={styles.contentAbout__about}>Телефон</p>
-                                <a href='tel:+7(964)439-08-88' className={styles.contentAbout__contact}>+7(964)439-08-88</a>
                                 <p className={styles.contentAbout__about}>E-mail</p>
                                 <a href='mailto:kratanchuk@gmail.com' className={styles.contentAbout__contact}>kratanchuk@gmail.com</a>
                             </div>

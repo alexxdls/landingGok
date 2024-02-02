@@ -20,7 +20,7 @@ export default function Footer() {
                 </div>
                 <div className={styles.itemNav}>
                     <nav className={styles.nav}>
-                        <Link href="#about" className={styles.itemNav}>О преприятии</Link>
+                        <Link href="#about" className={styles.itemNav}>О предприятии</Link>
                         <Link href="#news" className={styles.itemNav}>Новости</Link>
                         <Link href="#vacancy" className={styles.itemNav}>Вакансии</Link>
                         <Link href="#contacts" className={styles.itemNav}>Контакты</Link>

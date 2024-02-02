@@ -27,7 +27,7 @@ export default function NewsItem({
     }
 
     const getDateToTimastamp = (dateCreated) => {
-        const date = new Date(Number(dateCreated))
+        const date = new Date(dateCreated)
         const month = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октябрь", "Ноября", "Декабря"]
         return `${date.getDate()} ${month[date.getUTCMonth()]} ${date.getFullYear()}`
     }
@@ -39,7 +39,7 @@ export default function NewsItem({
                     className={styles.img}
                     src={imgUrl}
                     width={380}
-                    height={200}
+                    height={250}
                     alt={title}
                 />
             </div>
