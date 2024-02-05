@@ -35,7 +35,7 @@ export default function News({params} = props) {
             </div>
             <div className={styles.wrapper}>
                 <p className={styles.title}>{data.title}</p>
-                <Image
+                <img
                     className={styles.image}
                     src={`/images/uploads/${data.imgUrl}`}
                     alt={data.title}

@@ -35,7 +35,7 @@ export default function NewsItem({
     return (
         <Link href={`/news/${url}`} key={id} className={styles.container} ref={refWidthItemNews}>
             <div className={styles.wrapperImage}>
-                <Image 
+                <img 
                     className={styles.img}
                     src={imgUrl}
                     width={380}

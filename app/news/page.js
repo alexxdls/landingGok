@@ -22,7 +22,7 @@ export default function NewsPage() {
         getData()
     }, [])
 
-    const newsItems = dataNews.map((e, i) => {
+    const newsItems = dataNews.sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated)).map((e, i) => {
         return (
             <NewsItem 
                 id={e._id}
