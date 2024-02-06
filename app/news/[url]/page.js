@@ -34,7 +34,6 @@ export default function News({params} = props) {
                 <Link className={styles.pathLink} href={'/news'}>Новости</Link>
             </div>
             <div className={styles.wrapper}>
-                <p className={styles.title}>{data.title}</p>
                 <img
                     className={styles.image}
                     src={`/public/photo/${data.imgUrl}`}
@@ -42,7 +41,10 @@ export default function News({params} = props) {
                     width={500}
                     height={500}
                 />
-                <div className={styles.content}>
+            </div>
+            <div className={styles.wrapperContent}>
+                <div className={styles.content}> 
+                    <p className={styles.title}>{data.title}</p>
                     <p className={styles.date}>{getDateToTimastamp(data.dateCreated)}</p>
                     <p className={styles.placeholder}>{data.placeholder}</p>
                 </div>
