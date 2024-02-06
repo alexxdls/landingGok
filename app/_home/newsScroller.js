@@ -59,7 +59,7 @@ export default function NewsScroller() {
                 url={e.url}
                 title={e.title}
                 placeholder={e.placeholder}
-                imgUrl={`/images/uploads/${e.img}`}
+                imgUrl={`/public/photo/${e.img}`}
                 dateCreated={e.dateCreated}
                 setWidthItemNews={setWidthItemNews}
             />

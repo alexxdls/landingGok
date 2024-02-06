@@ -29,7 +29,7 @@ export default function NewsPage() {
                 title={e.title}
                 url={e.url}
                 placeholder={e.placeholder}
-                imgUrl={`/images/uploads/${e.img}`}
+                imgUrl={`/public/photo/${e.img}`}
                 dateCreated={e.dateCreated}
                 setWidthItemNews={setWidthItemNews}
             />
