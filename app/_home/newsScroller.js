@@ -18,7 +18,7 @@ export default function NewsScroller() {
     const refWidthScrollerNews = useRef(null)
     const router = useRouter()
 
-    const fetchNewsLimit4 = process.env.NEXT_PUBLIC_FETCH_NEWS_LIMIT4 || `/api/v1/news?offset=0&limit=4`
+    const fetchNewsLimit4 =  `/api/v1/news?offset=0&limit=4`
 
     useEffect(() => {
         const getData = async () => {

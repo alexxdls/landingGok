@@ -48,7 +48,7 @@
 .proposalItem {
     padding: 10px 15px;
     background: #E0F3F1;
-    border-radius: 20px;
+    border-radius:10px;
 }
 
 .proposalItem__name {

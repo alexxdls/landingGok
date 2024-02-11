@@ -8,12 +8,13 @@ import Image from 'next/image'
 export default function Header() {
     const [scrollY, setScrollY] = useState()
     const pathname = usePathname()
+    let hashName = 'window.location.hash'
+    // Реализовать детектор якорей
     let windowSize = 0;
-
     function logit() {
         setScrollY(window.scrollY);
     }
-
+    
     useEffect(() => {
         windowSize = window.innerWidth;
         window.addEventListener("scroll", logit);
@@ -41,10 +42,18 @@ export default function Header() {
                     </div>
                 </Link>
                 <nav className="header-nav">
-                    <Link href="/#about" className="header-nav__name">О преприятии</Link>
-                    <Link href="/#news" className="header-nav__name">Новости</Link>
-                    <Link href="/#vacancy" className="header-nav__name">Вакансии</Link>
-                    <Link href="/#contacts" className="header-nav__name">Контакты</Link>
+                    <Link href="/#about" className={hashName == '#about' ? 'header-nav__name header-nav__active-link' : 'header-nav__name'}>
+                        О преприятии
+                    </Link>
+                    <Link href="/#news" className={hashName == '#news' ? 'header-nav__name header-nav__active-link' : 'header-nav__name'}>
+                        Новости
+                    </Link>
+                    <Link href="/#vacancy" className={hashName == '#vacancy' ? 'header-nav__name header-nav__active-link' : 'header-nav__name'}>
+                        Вакансии
+                    </Link>
+                    <Link href="/#contacts" className={hashName == '#contacts' ? 'header-nav__name header-nav__active-link' : 'header-nav__name'}>
+                        Контакты
+                    </Link>
                 </nav>
                 
             </div>

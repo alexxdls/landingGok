@@ -41,7 +41,7 @@ export default function Work() {
                         <Image 
                         style={{'objectFit': 'cover',
                         'zIndex': '1', 
-                        'borderRadius': '20px',
+                        'borderRadius': '10px',
                         }}
                         src="/images/ИТ-отдел-отдел-кадров.jpg" 
                         alt="На фото сотрудники ИТ отдела (Кунцевич Артур, Руцкий Константин) и отдела кадров" 

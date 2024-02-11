@@ -32,6 +32,12 @@
 
 .header-nav__name {
     margin: 0px 15px;
+    transition: .4s;
+}
+
+.header-nav__active-link {
+    color: #5EBDB5;
+    transition: .4s;
 }
 
 @keyframes animationScroll {
