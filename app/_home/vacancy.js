@@ -32,6 +32,9 @@ export default function Vacancy() {
         return <div></div>
     }
 
+    if (data.results.vacancies < 1 || data.results.vacancies == undefined) {
+        return <div></div>
+    }
     
 
     const itemsVacancy = data.results.vacancies.map((e, i) => {

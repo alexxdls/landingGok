@@ -30,6 +30,7 @@
     line-height: 144.989%; /* 23.198px */
     letter-spacing: 0.64px;
     color: #424242;
+    text-align: justify;
 }
 
 .proposal{
@@ -77,6 +78,7 @@
     }
     .contentContainer {
         width: 100%;
+        margin-right: 0px;
     }
 
     .imgContainer {

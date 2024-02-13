@@ -4,12 +4,13 @@ import styles from './page.module.css'
 import useSWR from 'swr'
 import Image from 'next/image'
 import Link from "next/link";
+import Loading from "../loading";
 
 
 
 export default function News({params} = props) {
 
-    const fetchNewsCurrent = process.env.NEXT_PUBLIC_FETCH_NEWS_CURRENT || `/api/v1/news/`
+    const fetchNewsCurrent = `/api/v1/news/`
 
     
     const fetcher = (...args) => fetch(...args).then(res =>  res.json())
@@ -23,7 +24,7 @@ export default function News({params} = props) {
     }
 
     if (isLoading) {
-        return <p>load</p>
+        return <Loading />
     }
 
     return (

@@ -1,14 +1,16 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import styles from './page.module.css'
 import NewsItem from '../widgets/newsItem'
+import Loading from './loading'
 
 export default function NewsPage() {
     const [widthItemNews, setWidthItemNews] = useState()
     const [dataNews, setDataNews] = useState([])
+    const [resNewsMeta, setResNewsMeta] = useState({})
 
-    const fetchNewsLimit = process.env.NEXT_PUBLIC_FETCH_NEWS_LIMIT || '/api/v1/news?offset=0&limit=20'
+    const fetchNewsLimit = '/api/v1/news?offset=0&limit=90'
 
     useEffect(() => {
         const getData = async () => {
@@ -18,9 +20,12 @@ export default function NewsPage() {
             }
             const data = await res.json()
             setDataNews(data.news)
+            setResNewsMeta(data.meta)
         }
         getData()
     }, [])
+
+    // console.log(resNewsMeta);
 
     const newsItems = dataNews.sort((a, b) => new Date(b.dateCreated) - new Date(a.dateCreated)).map((e, i) => {
         return (
@@ -41,7 +46,9 @@ export default function NewsPage() {
             <div className={styles.wrapper}>
                 <p className={styles.titlePage}>Новости</p>
                 <div className={styles.newsItems}>
-                    {newsItems}
+                    <Suspense fallback={<Loading />}>
+                        {newsItems}
+                    </Suspense>
                 </div>
             </div>
         </div>

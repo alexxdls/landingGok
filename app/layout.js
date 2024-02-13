@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
       <meta name="google-site-verification" content="D24E7XGs4TB4Yzi-5WhT-JLJXQMWMQ81nV6ky1GQ0QM" />
       <body className={inter.className}>
         <Header />
-        {children}
+        <div style={{'min-height': '100vh'}}>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

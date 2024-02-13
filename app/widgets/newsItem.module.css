@@ -7,10 +7,28 @@
     margin: 0px 15px;
     position: relative;
     overflow: hidden;
+    transition: .4s;
+    outline: 0px #0d9494 solid;
+    position: relative;
+}
+
+.container:first-child {
+    margin: 0px 15px 0px 10px;
+}
+
+.container:hover {
+    scale: 0.98;
+    outline: 3px #0d9494 solid;
 }
 
 .img {
     object-fit: cover;
+    opacity: 1;
+    transition: .4s;
+}
+
+.imgMore {
+    opacity: .3;
 }
 
 @media (max-width: 420px) {
@@ -21,11 +39,21 @@
 
 .wrapperImage {
     overflow: hidden;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .payload {
     padding: 15px;
+    transition: .6s;
+}
+
+.payloadMore {
+    margin-top: -254px;
+    transition: .6s;
+    backdrop-filter: blur(3px);
+    /* background-color: #ffffff66; */
+    border-radius: 10px;
+    color: #000;
 }
 
 .title {
@@ -42,10 +70,18 @@
     font-weight: 700;
 }
 
+.dateMore {
+    color: #005858;
+}
+
 .placeholder {
     color: #424242;
     font-size: 16px;
     font-weight: 400;
+}
+
+.placeholderMore {
+    color: #000;
 }
 
 .blurBottom {

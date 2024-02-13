@@ -1,10 +1,11 @@
 "use client"
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import NewsItem from '../widgets/newsItem'
 import styles from './newsScroller.module.css'
 import { allNewsArrow, linkOut, nextArrow, prevArrow } from '@/public/icons/icons'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Loading from '../news/loading'
  
 
 export default function NewsScroller() {
@@ -68,14 +69,12 @@ export default function NewsScroller() {
 
     const showLoader = () => {
         return (
-            <div className='absolutPreloader'>
-                <div className='containerPreloader'>
+                <div className={styles.containerPreloader}>
                     <div className='itemPreloader'>
                         <div className='preloader'></div>
                         <p className='preloaderText'>Подгружаем...</p>
                     </div>
                 </div>
-            </div>
         )
     }
 
@@ -111,6 +110,7 @@ export default function NewsScroller() {
                     ref={refWidthScrollerNews}
                     style={{transform: `translateX(${translateXScroller}px)`}}>
                         { newsItems }
+                        {dataNews.length < 1 ? showLoader() :
                         <div className={styles.itemAllNews} 
                         onClick={() => handleClickShowAllNews()}
                         style={{width: widthItemNews}}>
@@ -119,11 +119,11 @@ export default function NewsScroller() {
                             </div>
                             <p className={styles.itemAllNews__about}>Все новости</p>
                         </div>
+                        }
                     </div>
                     <div className={styles.rightLinerGradient}></div>
                 </div>
             </div>
-            {isShowPreloader && showLoader()}
         </div>
     )
 }
