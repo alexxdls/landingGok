@@ -1,7 +1,9 @@
+import { Suspense } from 'react'
 import './globals.css'
 import Footer from './widgets/footer'
 import Header from './widgets/header'
 import { Inter } from 'next/font/google'
+import { Metrika } from './utils/metrika'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +22,9 @@ export default function RootLayout({ children }) {
         <div style={{'min-height': '100vh'}}>
           {children}
         </div>
+        <Suspense>
+          <Metrika />
+        </Suspense>
         <Footer />
       </body>
     </html>
