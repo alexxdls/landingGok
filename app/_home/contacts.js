@@ -35,7 +35,11 @@ export default function Contacts() {
                                 <p className={styles.contentAbout__about}>E-mail - канцелярия</p>
                                 <a href='mailto:mail@bor-acid.ru' className={styles.contentAbout__contact}>mail@bor-acid.ru</a>
                             </div>
-                   
+                            <p className={styles.contentAbout__title}>Отдел сбыта</p>
+                            <div className={styles.contentAboutItem}>
+                                <p className={styles.contentAbout__about}>Телефон</p>
+                                <a href='tel:+7(423)732-98-90' className={styles.contentAbout__contact}>+7(423)732-98-90</a>
+                            </div>
                             <p className={styles.contentAbout__title}>Пресс-служба</p>
                             <div className={styles.contentAboutItem}>
                                 <p className={styles.contentAbout__about}>E-mail</p>

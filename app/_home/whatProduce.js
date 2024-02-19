@@ -12,7 +12,7 @@ export default function WhatProduce() {
                     style={{}}>
                         <p className={styles.cardTitle}>Борная кислота марки B</p>
                         <p>Паспорт безопасности: 
-                            <a target='blank' href='./files/паспорт-безоп-бор-к-та-2020.pdf' className={styles.downloadPasport}> Сачать RU </a> 
+                            <a target='blank' href='./files/паспорт-безоп-бор-к-та-2020.pdf' className={styles.downloadPasport}> Скачать RU </a> 
                                 /    
                             <a target='blank' href='./files/bor-certificat.pdf' className={styles.downloadPasport}> Download EN</a>
                         </p>
