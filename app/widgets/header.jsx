@@ -43,7 +43,7 @@ export default function Header() {
                 </Link>
                 <nav className="header-nav">
                     <Link href="/#about" className={hashName == '#about' ? 'header-nav__name header-nav__active-link' : 'header-nav__name'}>
-                        О преприятии
+                        О предприятии
                     </Link>
                     <Link href="/#news" className={hashName == '#news' ? 'header-nav__name header-nav__active-link' : 'header-nav__name'}>
                         Новости
