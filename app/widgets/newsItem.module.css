@@ -1,3 +1,4 @@
+
 .container {
     max-height: 480px;
     max-width: 380px;
@@ -17,8 +18,9 @@
 }
 
 .container:hover {
-    scale: 0.98;
-    outline: 3px #0d9494 solid;
+/*    scale: 0.98;
+   outline: 3px #0d9494 solid;
+*/
 }
 
 .img {

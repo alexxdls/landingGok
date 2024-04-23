@@ -3,6 +3,7 @@ import FirstSplash from './_home/firstSplash'
 import AboutCompany from './_home/aboutCompany'
 import NewsScroller from './_home/newsScroller'
 import WhatProduce from './_home/whatProduce'
+import Documents from './_home/documents'
 import Work from './_home/work'
 import Vacancy from './_home/vacancy'
 import Contacts from './_home/contacts'
@@ -16,6 +17,7 @@ export default function Home() {
         <NewsScroller />
         <Work />
         <Vacancy />
+        <Documents />
         <Contacts />
       </main>
   )

@@ -33,7 +33,7 @@ export default function AboutCompany() {
                             sizes='100vw' 
                             style={{position: 'absolute', 
                                 'objectFit': 'cover',
-                                'borderRadius': '10px'    
+                                'borderRadius': '10px'
                             }}
                             alt='Дальнегорский ГОК'
                         />
